@@ -1,3 +1,4 @@
+@media (width < 999px) {}
 *,
 ::after
 ::before {
@@ -270,12 +271,19 @@
     cursor: pointer;
     border: none;
     text-align: center;
+    background-color: #ddd;
 }
 
 .container .card .face{
     width: 300px;
     height: 200px;
-    transition: 2.5s;;
+    transition: 2.5s;
+}
+.img3 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 50%;
 }
 
 .container .card .face.face1{
@@ -362,36 +370,36 @@
 }
 
 .container .card:hover .face.face1{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
 .container .card:hover .face.face5{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
 .container .card:hover .face.face6{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
 .container .card:hover .face.face7{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
 .container .card:hover .face.face8{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
 .container .card:hover .face.face9{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 .container .card:hover .face.face10{
-    background: #000000;
+    background: transparent;
     transform: translateY(0);
 }
 
@@ -501,7 +509,7 @@
 .container .card .face.face1 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -510,7 +518,7 @@
 .container .card .face.face5 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -519,7 +527,7 @@
 .container .card .face.face6 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -528,7 +536,7 @@
 .container .card .face.face7 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -537,7 +545,7 @@
 .container .card .face.face8 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -546,7 +554,7 @@
 .container .card .face.face9 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -554,7 +562,7 @@
 .container .card .face.face10 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: #ddd;
     text-align: center;
     font-size: 1.5em;
     border-radius: 10%;
@@ -594,13 +602,13 @@
 
 .container .card .face.face2 .content a:hover{
     background: #333;
-    color: #fff;
+    color: #ddd;
 }
 
 .container3 {
     display: flex;
     align-items: center;
-    margin-left: 3rem;
+    margin-left: 8.4rem;
 }
 
 .sign {
@@ -806,6 +814,309 @@
     }
 }
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+*{
+  box-sizing:border-box;
+}
+html, body{
+  height:100%;
+  font: normal 1em/1.5 "Open Sans";
+  background-color:#ddd;
+  background-size:cover;
+}
+a{
+  color:#ccc;
+}
+.container6 {
+  width:500px;
+  min-height:315px;
+  margin:0 auto;
+  position:relative;
+  padding-bottom:30px;
+  overflow:hidden;
+}
+h1{
+  text-align:center;
+  text-shadow:0 1px white;
+  color:#02303F;
+}
+h2{
+  color:#736861; 
+  margin:15px 0 5px;
+  text-shadow:0 1px rgba(255,255,255,0.5);
+}
+h6{
+  color:#928566; 
+  margin:0;
+}
+input[type="radio"] {
+position: absolute;
+width: 1px; 
+height: 1px; 
+padding: 0;
+margin: -1px;
+border: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+label{
+  display:block;
+  width:3rem;
+  border: 7px solid #333;
+  border-radius: 50%;
+  position:absolute;
+  bottom: 0px;
+  cursor: pointer;
+  transition: border-color 0.5s linear;
+}
+label.first {
+  left: 10%;
+}
+label.second{
+  left:20%;
+}
+label.third{
+  left:50%;
+}
+label.forth {
+  left:40% 
+}
+label.fifth {
+  left:70% 
+}
+label.sixth {
+  left:80% 
+}
 
+blockquote{
+  margin:0;
+  padding:30px;
+  width:500px;
+  height: 180px;
+  background-color: teal;
+  color:white;
+  box-shadow: 0 5px 2px rgba(0,0,0,0.3);
+  position:relative;
+  transition: background-color 0.6s linear;
+  border-radius: 5%;
+}
+
+blockquote:after { 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  top: 100%; 
+  border: solid transparent; 
+  border-top-color: teal;
+  border-left-color:teal;
+  border-width: 10px; 
+  left: 10%; 
+} 
+#second:checked ~ .two blockquote {
+  background-color: seagreen;
+}
+.two blockquote:after{
+  border: solid transparent; 
+  border-top-color: seagreen;
+  border-left-color:seagreen;
+  border-width: 10px;
+}
+#third:checked ~ .three blockquote{
+  background-color:tomato;
+}
+.three blockquote:after{
+  border: solid transparent; 
+  border-top-color: tomato;
+  border-left-color: tomato;
+  border-width: 10px;
+}
+
+#forth:checked ~ .four blockquote {
+  background-color:orange;
+}
+.four blockquote:after{
+  border: solid transparent; 
+  border-top-color: orange;
+  border-left-color:orange;
+  border-width: 10px;
+}
+
+#fifth:checked ~ .five blockquote {
+  background-color:slateblue;
+}
+.five blockquote:after{
+  border: solid transparent; 
+  border-top-color: slateblue;
+  border-left-color:slateblue;
+  border-width: 10px;
+}
+
+#sixth:checked ~ .six blockquote {
+  background-color:maroon;
+}
+.six blockquote:after{
+  border: solid transparent; 
+  border-top-color: maroon;
+  border-left-color:maroon;
+  border-width: 10px;
+}
+
+.quotes{
+  position:absolute;
+  color:rgba(255,255,255,0.5);
+  font-size:5em;
+}
+.leftq{
+  top:-25px;
+  left:5px;
+}
+.rightq{
+  bottom:-10px;
+  right:5px;
+}
+img{
+  float:left;
+  margin-right: 20px;
+}
+.slide{
+  position:absolute;
+  left:-100%;
+  opacity:0;
+  transition: all 1s ease-in;
+}
+
+#first:checked ~ label.first {
+  border-width:10px;
+  border-color: teal;
+}
+#second:checked ~ label.second {
+  border-width:10px; border-color:seagreen;
+}
+#third:checked ~ label.third {
+  border:10px solid tomato;
+}
+
+#forth:checked ~ label.forth {
+  border:10px solid orange;
+}
+
+#fifth:checked ~ label.fifth {
+  border:10px solid slateblue;
+}
+
+#sixth:checked ~ label.sixth {
+  border:10px solid maroon;
+}
+
+#first:checked ~ div.one {
+  left:0;
+  opacity:1;
+}
+#second:checked ~ div.two {
+  left:0;
+  opacity:1;
+}
+#third:checked ~ div.three {
+  left:0;
+  opacity:1;
+}
+
+#forth:checked ~ div.four {
+  left:0;
+  opacity:1;
+}
+
+#fifth:checked ~ div.five {
+  left:0;
+  opacity:1;
+}
+
+#sixth:checked ~ div.six {
+  left:0;
+  opacity:1;
+}
+
+.NWimg {
+  border-radius: 50%;
+}
+
+.JSimg {
+  border-radius: 50%;
+}
+
+.JMimg {
+  border-radius: 50%;
+}
+
+.container7{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #333;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #ddd;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: red;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 5s 0s;
+  -webkit-animation: load 50s 0s;
+  -moz-animation: load 5s 0s;
+  -o-animation: load 5s 0s;
+}
+
+.bar.front::before{
+  background-color: teal;
+}
+.bar.back::before{
+  background-color: yellow;
+}
+
+.bar.learning::before{
+  width: calc(90% - 10px);
+}
+.bar.basic::before{
+  width: calc(80% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(75% - 10px);
+}
+.bar.advanced::before{
+  width: calc(85% - 10px);
+}
+.bar.expert::before{
+  width: calc(90% - 10px);
+}
 
